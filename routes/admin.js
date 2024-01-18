@@ -1,7 +1,7 @@
 // backend/routes/admin.js
 const express = require('express');
 const router = express.Router();
-const Music = require('../model/music');
+const Music = require('../model/Music');
 
 router.get('/', async (req, res) => {
   const playlist = await Music.find();
